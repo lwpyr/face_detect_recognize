@@ -54,4 +54,4 @@ cd ..
 python demo.py
 ```
 
-![dets_1](/home/liwen/src/face_detect_recognize/dets_1.jpg)
+![dets_1](./dets_1.jpg)
