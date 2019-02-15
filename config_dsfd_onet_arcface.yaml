@@ -1,0 +1,33 @@
+---
+NEED_MXNET: True
+NEED_PYTORCH: True
+
+DETECT_MODEL: "DSFD"
+ALIGN_MODEL: "ONET"
+RECOGNIZE_MODEL: "ARCFACE"
+
+DATABASE_READY: False
+ID_FOLDER: "/home/liwen/src/face_detect_recognize/id_img"
+ALIGNED_FOLDER: "/home/liwen/src/face_detect_recognize/id_img_aligned"
+
+DETECT:
+    SCALE:
+    - 300
+    - 500
+    THRESH: 0.7
+    MODEL_PATH: "/home/liwen/src/face_detect_recognize/lib/data/dsfd_face.pth"
+    GPU_ID: 0
+    FONT_PATH: "/home/liwen/src/face_detect_recognize/lib/data/simsun.ttc"
+
+ALIGN:
+    NMS_THRESH: 0.7
+    THRESH: 0.3
+    MODEL_PATH: "/home/liwen/src/face_detect_recognize/lib/data/det3"
+    GPU_ID: 0
+
+RECOGNIZE:
+    STANDARD: "MSE"
+    THRESH: 1.24
+    BATCH_SIZE: 8
+    MODEL_PATH: "/home/liwen/src/face_detect_recognize/lib/data/model"
+    GPU_ID: 0
