@@ -20,7 +20,6 @@ DETECT:
     FONT_PATH: "/home/liwen/src/face_detect_recognize/lib/data/simsun.ttc"
 
 ALIGN:
-    NMS_THRESH: 0.7
     THRESH: 0.3
     MODEL_PATH: "/home/liwen/src/face_detect_recognize/lib/data/det3"
     GPU_ID: 0
